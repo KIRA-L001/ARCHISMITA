@@ -1,0 +1,477 @@
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Bebas Neue", sans-serif;
+    color: #a71616;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    width: 0px;               
+  }
+.main{
+    background:#232323;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.ibb.co/FhfBXMD/static.jpg');
+    mix-blend-mode:overlay;
+    z-index: -1 ;
+}
+.bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #d84747;
+    z-index: -2;
+}
+.logo img{
+    height: 60px;
+    mix-blend-mode:overlay;
+}
+.logo{
+    position: absolute;
+    top: 120px;
+    left: 2vw;
+}
+.text1 h1{
+    position: absolute;
+    font-size: 100px;
+}
+.text1 h1:nth-child(10){
+    right: 10px;
+}
+.text1 h1:nth-child(9){
+    right: 40px;
+}
+.text1 h1:nth-child(8){
+    right: 75px;
+}
+.text1 h1:nth-child(7){
+    right: 90px;
+}
+.text1 h1:nth-child(6){
+    right: 141px;
+}
+.text1 h1:nth-child(5){
+    right: 175px;
+}
+.text1 h1:nth-child(4){
+    right: 190px;
+}
+.text1 h1:nth-child(3){
+    right: 229px;
+}
+.text1 h1:nth-child(2){
+    right: 263px;
+}
+.text1 h1:nth-child(1){
+    right: 301px;
+}
+.text2 h1{
+    position: absolute;
+    top: 100px;
+    font-size: 100px;
+}
+.text2 h1:nth-child(1){
+    right: 109px;
+}
+.text2 h1:nth-child(2){
+    right: 76px;
+}
+.text2 h1:nth-child(3){
+    right: 40px;
+}
+.text2 h1:nth-child(4){
+    right: 10px;
+}
+.text3 h1{
+    position: absolute;
+    left: 10px;
+    bottom: 300px;
+    font-size: 150px;
+    letter-spacing: -4px;
+}
+.text4 h1{
+    position: absolute;
+    bottom: 150px;
+    font-size: 170px;
+}
+.text4 h1:nth-child(1){
+    left: 10px;
+}
+.text4 h1:nth-child(2){
+    left: 75px;
+}
+.text5 h1{
+    position: absolute;
+    bottom: -27px;
+    font-size: 170px;
+}
+.text5 h1:nth-child(1){
+    left: 10px;
+}
+.text5 h1:nth-child(2){
+    left: 70px;
+}
+.text5 h1:nth-child(3){
+    left: 135px;
+}
+.text5 h1:nth-child(4){
+    left: 193px;
+}
+.text5 h1:nth-child(5){
+    left: 255px;
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+}
+#curve{
+    fill:transparent;
+}
+.text{
+    transform-origin: 42% 50%;
+    fill: #dadada;
+    font-size: 20px;
+    animation: rotate 15s linear infinite;
+}
+@keyframes rotate{
+    form{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.img img{
+    height: 600px;
+    border-radius: 10px;
+}
+.img{
+    position:absolute;
+    transform:translate(-169px);
+    left: 50%;
+    bottom: 25px;
+}
+.behind{
+    left: 35%;
+    bottom: 70px;
+    position: absolute;
+    height: 400px;
+    width: 30vw;
+    background:#4a4a4a96;
+    mix-blend-mode:color-burn
+}
+.page2{
+    margin-left: 2.5vw;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.front{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 95vh;
+    width:95vw;
+}
+.part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    margin-left: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 40%;
+}
+.left h1{
+    letter-spacing: -5px;
+    color: #232323;
+    font-size: 70px;
+    font-family: "PP mori";
+}
+.left span{
+    font-size: 100px;
+    color: #232323;
+    font-family: "PP mori";
+    color: #dadada;
+}
+.button {
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 140px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: rgb(222,0,75);
+    background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+  
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.right h1{
+    margin-right: 150px;
+    letter-spacing: -3px;
+    color: #232323;
+    font-size: 35px;
+    font-family: "PP mori";
+}
+@media only screen and (max-width: 833px) {
+    .page2{
+        margin-left: 2.5vw;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+    .front{
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        height: 95vh;
+        width:95vw;
+    }
+    .part {
+        display: grid;
+    }
+    .left{
+        margin-left: 75px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        width: 50%;
+    }
+    .button{
+        margin-top: 30px;
+    }
+    .left h1{
+        letter-spacing: -5px;
+        color: #232323;
+        font-size: 50px;
+        font-family: "PP mori";
+    }
+    .left span{
+        font-size: 80px;
+        font-family: "PP mori";
+        color: #dadada;
+    }
+    .right{
+        margin-left: 7px;
+        margin-right: 0px;
+        width: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+    }
+    .right h1{
+        letter-spacing: -2px;
+        color: #232323;
+        font-size: 25px;
+        font-family: "PP mori";
+    }
+}
+.page3{
+    height: 100vh;
+    width: 100vw;
+}
+.page4{
+    margin-left: 2.5%;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+}
+.page4 .front{
+    top: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 95vh;
+    width:95vw;
+}
+.title1{
+    margin-top: 50px;
+    transform: translate(-5vw);
+    margin-left: 45%;
+    display: flex;
+    align-items: center;
+}
+.title1 h1{
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    color: #dadada;
+}
+.title2{
+    transform: translate(-0vw);
+    margin-left: 45%;
+    display: flex;
+    align-items: center;
+}
+.title2 h1{
+    font-family: "Dancing Script", cursive;
+    color: #dadada;
+}
+@media only screen and (max-width: 833px){
+    .title1{
+        margin-top: 50px;
+        transform: translate(-25vw);
+        margin-left: 45%;
+        display: flex;
+        align-items: center;
+    }
+    .title2{
+        transform: translate(-5vw);
+        margin-left: 45%;
+        display: flex;
+        align-items: center;
+    }
+}
+.page4 .front h1{
+    font-size: 50px;
+    margin-left: 100px;
+}
+.social-links{
+    margin-top: 10vh;
+    transform: translate(-110px);
+    margin-left: 50%;
+}
+.page4 .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.page4 .social-links a:hover{
+	color: #24262b;
+	background-color: #dadada;
+}
+.page4 h6{
+    right: 0;
+    top: 65vh;
+    color: #000;
+    position: absolute;
+    font-size: 14.8px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+.page4 .list{
+    margin-top: 10vh;
+    font-size: 25px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.page4 .list a{
+    color: #dadada;
+    transition: all 0.7s;
+    text-decoration: none;
+}
+.page4 .list a:hover{
+    font-size: 35px;
+}
+@media only screen and (max-width: 833px){
+    .social-links{
+        margin-top: 10vh;
+        transform: translate(-0px);
+        margin-left: 22.5%;
+    }
+}
